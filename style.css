@@ -60,7 +60,8 @@
     .card__img  {
         max-height: 120px;
         max-width: 120px;
-        padding: 24px 99px;
+        padding-top: 24px;
+        padding-bottom: 24px;
         
     }
 }
