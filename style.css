@@ -19,14 +19,29 @@
     filter: drop-shadow(0px 24px 64px rgba(0, 0, 0, 0.04));
 }
 
+@media screen and (max-width: 660px){
+    .card  {
+        flex-direction: column;
+        max-width: 318px;
+        min-height: 400px;
+        
+    }
+}
+
 .card__media {
     max-width: 400px;
     width: 100%;
     display: grid;
     justify-content: center;
     align-items: center;
-    
     border-radius: 16px 0 0 16px;
+}
+
+@media screen and (max-width: 660px){
+    .card__media  {
+        border-radius: 16px 16px 0 0 ;
+        
+    }
 }
 
 .bg-sky {
@@ -41,11 +56,28 @@
     max-width: 240px;
 }
 
+@media screen and (max-width: 660px){
+    .card__img  {
+        max-height: 120px;
+        max-width: 120px;
+        padding: 24px 99px;
+        
+    }
+}
+
 .card__data {
     background-color: #fff;
     border-radius: 0 16px 16px 0;
     padding: 32px 35px 40px 32px;
     display: grid;
+}
+
+@media screen and (max-width: 660px){
+    .card__data  {
+        border-radius: 0 0 16px 16px;
+        padding: 14px 25px 16px;
+        
+    }
 }
 
 .card__header {
@@ -60,12 +92,26 @@
     color: #6E798C;
 }
 
+@media screen and (max-width: 660px){
+    .card__type  {
+        font-size: 11px;
+        line-height: 15px;  
+    }
+}
+
 .card__post-date {
     margin: 0;
     font-size: 18px;
     font-weight: 400;
     line-height: 21px;
     color: #6E798C;
+}
+
+@media screen and (max-width: 660px){
+    .card__post-date  {
+        font-size: 11px;
+        line-height: 15px;  
+    }
 }
 
 .card__title {
@@ -75,6 +121,14 @@
     line-height: 46px;
 }
 
+@media screen and (max-width: 660px){
+    .card__title  {
+        margin-top: 10px;
+        font-size: 20px;
+        line-height: 25px;  
+    }
+}
+
 .card__desc {
     margin: 15px 0 0;
     font-size: 18px;
@@ -82,10 +136,29 @@
     line-height: 27px;
 }
 
+@media screen and (max-width: 660px){
+    .card__desc  {
+        margin-top: 4px; 
+    }
+}
+
+@media screen and (max-width: 660px){
+    .card__desc {
+        font-size: 13px;
+        line-height: 19px;  
+    }
+}
+
 .card__footer {
     margin: 51px 0 0;
     display: flex;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 660px){
+    .card__footer  {
+        margin-top: 14px; 
+    }
 }
 
 .card__profile {
@@ -95,6 +168,12 @@
     gap: 12px;
 }
 
+@media screen and (max-width: 660px){
+    .card__profile-img {
+        max-height: 32px;
+        max-width: 32px;
+    }
+}
 .card__more {
     margin: 0;
     display: flex;
@@ -107,4 +186,11 @@
     font-weight: 700;
     line-height: 21px;
     color: #007AE9;
+}
+
+@media screen and (max-width: 660px){
+    .link  {
+        font-size: 11px;
+        line-height: 15px;  
+    }
 }
